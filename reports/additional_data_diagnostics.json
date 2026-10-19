@@ -1,0 +1,199 @@
+{
+  "training_rows": 1412,
+  "uppercase_term_rows": 1260,
+  "term_not_literal_substring_rows": 16,
+  "term_absence_flag_ids": [
+    "hf-00013-4d65a9bbf8",
+    "hf-00023-35ed01ea47",
+    "hf-00040-438ef8025b",
+    "hf-00050-4266a0ded6",
+    "hf-00052-a6d80f01fc",
+    "hf-00117-e5e3f1701f",
+    "hf-00135-f5e1069766",
+    "hf-00140-89a2f2398f",
+    "hf-00154-74a63966f5",
+    "hf-00188-a525bbb1f7",
+    "hf-00196-3079519280",
+    "hf-00212-e75bbe088a",
+    "hf-00242-7f5a064faf",
+    "hf-00984-3dc15d7795",
+    "hf-00990-7b71ad3070",
+    "hf-00992-e4f3667c60"
+  ],
+  "tokenization_examples_by_length": {
+    "1 token": [
+      {
+        "term": "W",
+        "token_ids": [
+          54
+        ],
+        "pieces": [
+          "W"
+        ]
+      },
+      {
+        "term": "L",
+        "token_ids": [
+          43
+        ],
+        "pieces": [
+          "L"
+        ]
+      },
+      {
+        "term": "Stan",
+        "token_ids": [
+          50959
+        ],
+        "pieces": [
+          "Stan"
+        ]
+      },
+      {
+        "term": "Drag",
+        "token_ids": [
+          17906
+        ],
+        "pieces": [
+          "Drag"
+        ]
+      },
+      {
+        "term": "Bet",
+        "token_ids": [
+          56199
+        ],
+        "pieces": [
+          "Bet"
+        ]
+      }
+    ],
+    "3+ tokens": [
+      {
+        "term": "L+ratio",
+        "token_ids": [
+          43,
+          10,
+          45358
+        ],
+        "pieces": [
+          "L",
+          "+",
+          "ratio"
+        ]
+      },
+      {
+        "term": "Cheugy",
+        "token_ids": [
+          26843,
+          768,
+          88
+        ],
+        "pieces": [
+          "Che",
+          "ug",
+          "y"
+        ]
+      },
+      {
+        "term": "Glow up",
+        "token_ids": [
+          38,
+          10303,
+          705
+        ],
+        "pieces": [
+          "G",
+          "low",
+          "Ġup"
+        ]
+      },
+      {
+        "term": "Sip tea",
+        "token_ids": [
+          50,
+          573,
+          15243
+        ],
+        "pieces": [
+          "S",
+          "ip",
+          "Ġtea"
+        ]
+      },
+      {
+        "term": "Iykyk",
+        "token_ids": [
+          40,
+          88,
+          7891,
+          74
+        ],
+        "pieces": [
+          "I",
+          "y",
+          "ky",
+          "k"
+        ]
+      }
+    ],
+    "2 tokens": [
+      {
+        "term": "Dank",
+        "token_ids": [
+          35,
+          1180
+        ],
+        "pieces": [
+          "D",
+          "ank"
+        ]
+      },
+      {
+        "term": "TFW",
+        "token_ids": [
+          10808,
+          54
+        ],
+        "pieces": [
+          "TF",
+          "W"
+        ]
+      },
+      {
+        "term": "Woke",
+        "token_ids": [
+          54,
+          4740
+        ],
+        "pieces": [
+          "W",
+          "oke"
+        ]
+      },
+      {
+        "term": "Bop",
+        "token_ids": [
+          33,
+          453
+        ],
+        "pieces": [
+          "B",
+          "op"
+        ]
+      },
+      {
+        "term": "Smol",
+        "token_ids": [
+          10673,
+          337
+        ],
+        "pieces": [
+          "Sm",
+          "ol"
+        ]
+      }
+    ]
+  },
+  "note": "Flags are review candidates, not automatic errors; inflection/spacing can explain absence."
+}

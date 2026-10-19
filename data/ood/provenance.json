@@ -1,0 +1,7 @@
+{
+  "excluded_overlap_terms": [],
+  "count": 12,
+  "trained_on": false,
+  "status": "authored diagnostic set, not external benchmark",
+  "source_verification": "Official linked Git, Kubernetes and MDN pages opened during implementation; definitions/examples are authored paraphrases, not copied benchmark labels."
+}

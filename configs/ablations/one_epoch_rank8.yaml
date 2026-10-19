@@ -1,0 +1,33 @@
+seed: 42
+model:
+  local_path: models/Qwen2.5-0.5B-Instruct
+  device: mps
+  dtype: bfloat16
+  max_sequence_length: auto
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: auto_inspect
+training:
+  epochs: 1
+  micro_batch_size: 1
+  gradient_accumulation_steps: 8
+  optimizer: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  warmup_ratio: 0.05
+  scheduler: cosine
+  patience: 2
+  gradient_checkpointing: true
+  max_steps: null
+  max_seconds: 3600
+  train_limit: null
+  validation_limit: null
+  context: true
+  data_fraction: 1.0
+evaluation:
+  do_sample: false
+  max_new_tokens: 64
+  shots: 2

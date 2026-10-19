@@ -1,0 +1,119 @@
+{
+  "conditions": {
+    "Base zero-shot": {
+      "condition": "zero-shot",
+      "rows": 181,
+      "unique_terms": 154,
+      "metrics": {
+        "rouge_l": 0.03515629352930363,
+        "reference_content_word_coverage": 0.13779778611595317,
+        "empty": 0.0,
+        "response_words": 42.270718232044196,
+        "repeated_trigram_fraction": 0.0033770419812777434
+      },
+      "assistant_loss": {
+        "loss": 5.087441276248083,
+        "perplexity": 161.97488239194897,
+        "target_tokens": 1196
+      },
+      "runtime_seconds": 248.66911366698332,
+      "runtime_scope": "current invocation; earlier resumed generation not included",
+      "peak_process_rss_bytes": 317472768,
+      "mps_current_allocated_bytes": 988066048,
+      "mps_driver_allocated_bytes": 2225602560,
+      "token_limit_rate": 0.35911602209944754,
+      "completed": 181,
+      "failed": 0,
+      "semantic_accuracy": null,
+      "semantic_review": "requires independent human annotation"
+    },
+    "Base few-shot": {
+      "condition": "few-shot",
+      "rows": 181,
+      "unique_terms": 154,
+      "metrics": {
+        "rouge_l": 0.07272570789768522,
+        "reference_content_word_coverage": 0.10211786372007367,
+        "empty": 0.0,
+        "response_words": 9.895027624309392,
+        "repeated_trigram_fraction": 0.0041105916796524535
+      },
+      "assistant_loss": {
+        "loss": 3.722252338327293,
+        "perplexity": 41.35744023135291,
+        "target_tokens": 1196
+      },
+      "runtime_seconds": 94.80094800004736,
+      "runtime_scope": "current invocation; earlier resumed generation not included",
+      "peak_process_rss_bytes": 456376320,
+      "mps_current_allocated_bytes": 988066048,
+      "mps_driver_allocated_bytes": 3293052928,
+      "token_limit_rate": 0.0055248618784530384,
+      "completed": 181,
+      "failed": 0,
+      "semantic_accuracy": null,
+      "semantic_review": "requires independent human annotation"
+    },
+    "LoRA": {
+      "condition": "LoRA",
+      "rows": 181,
+      "unique_terms": 154,
+      "metrics": {
+        "rouge_l": 0.29671768400097603,
+        "reference_content_word_coverage": 0.2889502762430939,
+        "empty": 0.0,
+        "response_words": 3.6298342541436464,
+        "repeated_trigram_fraction": 0.0
+      },
+      "assistant_loss": {
+        "loss": 2.0462527146382277,
+        "perplexity": 7.738847035145649,
+        "target_tokens": 1196
+      },
+      "runtime_seconds": 47.46060845803004,
+      "runtime_scope": "current invocation; earlier resumed generation not included",
+      "peak_process_rss_bytes": 463470592,
+      "mps_current_allocated_bytes": 992882944,
+      "mps_driver_allocated_bytes": 2233991168,
+      "token_limit_rate": 0.0,
+      "completed": 181,
+      "failed": 0,
+      "semantic_accuracy": null,
+      "semantic_review": "requires independent human annotation"
+    }
+  },
+  "paired_term_statistics": {
+    "Base few-shot": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.036281943754320416,
+      "tuned_term_macro": 0.07455410233978768,
+      "units": 154,
+      "mean_delta": 0.038272158585467266,
+      "std_delta": 0.15279478121476628,
+      "ci95": [
+        0.01571802453523728,
+        0.0639567584076964
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 0.0006999300069993001
+    },
+    "LoRA": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.036281943754320416,
+      "tuned_term_macro": 0.30172052346817235,
+      "units": 154,
+      "mean_delta": 0.265438579713852,
+      "std_delta": 0.330173082453437,
+      "ci95": [
+        0.21401595248054925,
+        0.3179591246448135
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 9.999000099990002e-05
+    }
+  }
+}

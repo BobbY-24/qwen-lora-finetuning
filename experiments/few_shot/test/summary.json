@@ -1,0 +1,27 @@
+{
+  "condition": "few-shot",
+  "rows": 181,
+  "unique_terms": 154,
+  "metrics": {
+    "rouge_l": 0.07272570789768522,
+    "reference_content_word_coverage": 0.10211786372007367,
+    "empty": 0.0,
+    "response_words": 9.895027624309392,
+    "repeated_trigram_fraction": 0.0041105916796524535
+  },
+  "assistant_loss": {
+    "loss": 3.722252338327293,
+    "perplexity": 41.35744023135291,
+    "target_tokens": 1196
+  },
+  "runtime_seconds": 94.80094800004736,
+  "runtime_scope": "current invocation; earlier resumed generation not included",
+  "peak_process_rss_bytes": 456376320,
+  "mps_current_allocated_bytes": 988066048,
+  "mps_driver_allocated_bytes": 3293052928,
+  "token_limit_rate": 0.0055248618784530384,
+  "completed": 181,
+  "failed": 0,
+  "semantic_accuracy": null,
+  "semantic_review": "requires independent human annotation"
+}

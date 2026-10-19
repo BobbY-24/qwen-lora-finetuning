@@ -1,0 +1,170 @@
+{
+  "checkpoint": {
+    "path": "models/Qwen2.5-0.5B-Instruct",
+    "config": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "eos_token_id": 151645,
+      "hidden_act": "silu",
+      "hidden_size": 896,
+      "initializer_range": 0.02,
+      "intermediate_size": 4864,
+      "max_position_embeddings": 32768,
+      "max_window_layers": 21,
+      "model_type": "qwen2",
+      "num_attention_heads": 14,
+      "num_hidden_layers": 24,
+      "num_key_value_heads": 2,
+      "rms_norm_eps": 1e-06,
+      "rope_theta": 1000000.0,
+      "sliding_window": 32768,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.43.1",
+      "use_cache": true,
+      "use_sliding_window": false,
+      "vocab_size": 151936
+    },
+    "files": [
+      {
+        "name": "LICENSE",
+        "size": 11343,
+        "mtime_ns": 1786898541210285011
+      },
+      {
+        "name": "README.md",
+        "size": 4917,
+        "mtime_ns": 1786898541231188941
+      },
+      {
+        "name": "config.json",
+        "size": 659,
+        "mtime_ns": 1786898541209443542
+      },
+      {
+        "name": "generation_config.json",
+        "size": 242,
+        "mtime_ns": 1786898541013047107
+      },
+      {
+        "name": "merges.txt",
+        "size": 1671839,
+        "mtime_ns": 1786898541285356458
+      },
+      {
+        "name": "model.safetensors",
+        "size": 988097824,
+        "mtime_ns": 1786898606436262008
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 7031645,
+        "mtime_ns": 1786898541487316963
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 7305,
+        "mtime_ns": 1786898540581087120
+      },
+      {
+        "name": "vocab.json",
+        "size": 2776833,
+        "mtime_ns": 1786898541308872171
+      }
+    ],
+    "tokenizer_sha256": "a64dff5dc8eaba5b327ae7611de60afdb75ac741ca62b9e61a246b913b275acb"
+  },
+  "model_class": "Qwen2ForCausalLM",
+  "total_parameters": 494032768,
+  "trainable_parameters": 494032768,
+  "frozen_parameters": 0,
+  "trainable_percent": 100.0,
+  "layers": 24,
+  "hidden_size": 896,
+  "intermediate_size": 4864,
+  "attention_heads": 14,
+  "kv_heads": 2,
+  "head_dim": 64,
+  "vocabulary_size": 151936,
+  "max_context_length": 32768,
+  "dtype": "torch.bfloat16",
+  "device": "mps:0",
+  "attention_implementation": "sdpa",
+  "modules": [
+    {
+      "name": "model.embed_tokens",
+      "class": "Embedding"
+    },
+    {
+      "name": "model.layers.0",
+      "class": "Qwen2DecoderLayer"
+    },
+    {
+      "name": "model.layers.0.self_attn",
+      "class": "Qwen2Attention"
+    },
+    {
+      "name": "model.layers.0.self_attn.q_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.self_attn.k_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.self_attn.v_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.self_attn.o_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.mlp",
+      "class": "Qwen2MLP"
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.mlp.up_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj",
+      "class": "Linear"
+    },
+    {
+      "name": "model.layers.0.mlp.act_fn",
+      "class": "SiLUActivation"
+    },
+    {
+      "name": "model.layers.0.input_layernorm",
+      "class": "Qwen2RMSNorm"
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm",
+      "class": "Qwen2RMSNorm"
+    },
+    {
+      "name": "model.norm",
+      "class": "Qwen2RMSNorm"
+    },
+    {
+      "name": "lm_head",
+      "class": "Linear"
+    }
+  ],
+  "tokenizer_class": "Qwen2Tokenizer",
+  "tokenizer_size": 151665,
+  "special_tokens": {
+    "eos_token": "<|im_end|>",
+    "pad_token": "<|endoftext|>"
+  },
+  "eos_token": "<|im_end|>",
+  "pad_token": "<|endoftext|>"
+}

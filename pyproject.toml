@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "community-qwen"
+version = "0.1.0"
+description = "An explicit PyTorch LoRA learning laboratory for contextual slang interpretation"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.13", "transformers>=5.15", "peft>=0.20", "datasets>=5", "accelerate>=1.14", "numpy", "matplotlib", "pyyaml", "safetensors"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+qlora = ["bitsandbytes>=0.45; platform_system == 'Linux'"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["local_model: uses existing 0.5B checkpoint", "cuda: needs CUDA and bitsandbytes"]

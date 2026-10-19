@@ -1,0 +1,111 @@
+{
+  "splits_disjoint": true,
+  "unchanged_split_hashes": true,
+  "evaluations": [
+    {
+      "path": "experiments/lora/run_001/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/lora/run_001/general/predictions.jsonl",
+      "rows": 25,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/lora/run_001/ood/predictions.jsonl",
+      "rows": 12,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/baseline/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/baseline/general/predictions.jsonl",
+      "rows": 25,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/baseline/ood/predictions.jsonl",
+      "rows": 12,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/baseline/validation_zero/predictions.jsonl",
+      "rows": 16,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/base_term_only/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/lora_term_only/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/one_epoch_seed123/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/one_epoch_rank8/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/one_epoch_quarter/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/ablations/one_epoch_rank4/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/few_shot/test/predictions.jsonl",
+      "rows": 181,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    },
+    {
+      "path": "experiments/few_shot/validation_two/predictions.jsonl",
+      "rows": 16,
+      "ids_unique": true,
+      "metrics_recomputed": true,
+      "complete": true
+    }
+  ]
+}

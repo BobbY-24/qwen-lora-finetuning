@@ -1,0 +1,341 @@
+{
+  "runs": {
+    "one_epoch_rank8": {
+      "training": {
+        "status": "completed",
+        "total_parameters": 495114112,
+        "trainable_parameters": 1081344,
+        "frozen_parameters": 494032768,
+        "trainable_percent": 0.21840298504761665,
+        "epoch": 1,
+        "next_batch": 0,
+        "global_step": 177,
+        "best_validation_loss": 2.195894857700521,
+        "bad_evals": 0,
+        "examples_processed": 1412,
+        "tokens_processed": 9217,
+        "elapsed_seconds": 341.4056614160072,
+        "initial_validation": {
+          "loss": 5.533407996803693,
+          "perplexity": 253.0046825866045,
+          "target_tokens": 1042
+        },
+        "final_training_loss": 2.4064289268694425,
+        "maximum_unclipped_gradient_norm": 34.75968551635742,
+        "runtime_seconds": 355.13618825003505,
+        "peak_process_rss_bytes": 354353152,
+        "mps_current_allocated_bytes": 1130344448,
+        "mps_driver_allocated_bytes": 3418292224,
+        "sampled_peak_mps_allocated_bytes": 1143268608,
+        "device": "mps",
+        "base_dtype": "torch.bfloat16",
+        "train_rows": 1412,
+        "train_terms": 1231,
+        "effective_batch_size": 8,
+        "quantized": false,
+        "total_planned_steps": 177,
+        "adapter_selection": "lowest validation loss",
+        "best_adapter": "experiments/ablations/one_epoch_rank8/adapter"
+      },
+      "evaluation": {
+        "condition": "LoRA",
+        "rows": 181,
+        "unique_terms": 154,
+        "metrics": {
+          "rouge_l": 0.20947399748852122,
+          "reference_content_word_coverage": 0.1902394106813996,
+          "empty": 0.0,
+          "response_words": 3.132596685082873,
+          "repeated_trigram_fraction": 0.0
+        },
+        "assistant_loss": {
+          "loss": 2.223553685228462,
+          "perplexity": 9.240109028715036,
+          "target_tokens": 1196
+        },
+        "runtime_seconds": 40.853701500047464,
+        "runtime_scope": "current invocation; earlier resumed generation not included",
+        "peak_process_rss_bytes": 409157632,
+        "mps_current_allocated_bytes": 992882944,
+        "mps_driver_allocated_bytes": 2233991168,
+        "token_limit_rate": 0.0,
+        "completed": 181,
+        "failed": 0,
+        "semantic_accuracy": null,
+        "semantic_review": "requires independent human annotation"
+      }
+    },
+    "one_epoch_rank4": {
+      "training": {
+        "status": "completed",
+        "total_parameters": 494573440,
+        "trainable_parameters": 540672,
+        "frozen_parameters": 494032768,
+        "trainable_percent": 0.1093208725482711,
+        "epoch": 1,
+        "next_batch": 0,
+        "global_step": 177,
+        "best_validation_loss": 2.203697998012325,
+        "bad_evals": 0,
+        "examples_processed": 1412,
+        "tokens_processed": 9217,
+        "elapsed_seconds": 299.07551120902644,
+        "initial_validation": {
+          "loss": 5.533407996803693,
+          "perplexity": 253.0046825866045,
+          "target_tokens": 1042
+        },
+        "final_training_loss": 2.3452320726294267,
+        "maximum_unclipped_gradient_norm": 51.311126708984375,
+        "runtime_seconds": 311.942739042046,
+        "peak_process_rss_bytes": 463880192,
+        "mps_current_allocated_bytes": 1097906944,
+        "mps_driver_allocated_bytes": 3384737792,
+        "sampled_peak_mps_allocated_bytes": 1111521280,
+        "device": "mps",
+        "base_dtype": "torch.bfloat16",
+        "train_rows": 1412,
+        "train_terms": 1231,
+        "effective_batch_size": 8,
+        "quantized": false,
+        "total_planned_steps": 177,
+        "adapter_selection": "lowest validation loss",
+        "best_adapter": "experiments/ablations/one_epoch_rank4/adapter"
+      },
+      "evaluation": {
+        "condition": "LoRA",
+        "rows": 181,
+        "unique_terms": 154,
+        "metrics": {
+          "rouge_l": 0.2206074620880125,
+          "reference_content_word_coverage": 0.20575777272234858,
+          "empty": 0.0,
+          "response_words": 3.458563535911602,
+          "repeated_trigram_fraction": 0.0
+        },
+        "assistant_loss": {
+          "loss": 2.2091748314258646,
+          "perplexity": 9.108197492948708,
+          "target_tokens": 1196
+        },
+        "runtime_seconds": 42.70303304202389,
+        "runtime_scope": "current invocation; earlier resumed generation not included",
+        "peak_process_rss_bytes": 427655168,
+        "mps_current_allocated_bytes": 990474496,
+        "mps_driver_allocated_bytes": 2225602560,
+        "token_limit_rate": 0.0,
+        "completed": 181,
+        "failed": 0,
+        "semantic_accuracy": null,
+        "semantic_review": "requires independent human annotation"
+      }
+    },
+    "one_epoch_quarter": {
+      "training": {
+        "status": "completed",
+        "total_parameters": 495114112,
+        "trainable_parameters": 1081344,
+        "frozen_parameters": 494032768,
+        "trainable_percent": 0.21840298504761665,
+        "epoch": 1,
+        "next_batch": 0,
+        "global_step": 44,
+        "best_validation_loss": 2.5113610849785486,
+        "bad_evals": 0,
+        "examples_processed": 346,
+        "tokens_processed": 2252,
+        "elapsed_seconds": 77.76215979101835,
+        "initial_validation": {
+          "loss": 5.533407996803693,
+          "perplexity": 253.0046825866045,
+          "target_tokens": 1042
+        },
+        "final_training_loss": 3.7945332527160645,
+        "maximum_unclipped_gradient_norm": 43.16533660888672,
+        "runtime_seconds": 90.75480616599089,
+        "peak_process_rss_bytes": 478937088,
+        "mps_current_allocated_bytes": 1130062592,
+        "mps_driver_allocated_bytes": 2343845888,
+        "sampled_peak_mps_allocated_bytes": 1146139648,
+        "device": "mps",
+        "base_dtype": "torch.bfloat16",
+        "train_rows": 346,
+        "train_terms": 308,
+        "effective_batch_size": 8,
+        "quantized": false,
+        "total_planned_steps": 44,
+        "adapter_selection": "lowest validation loss",
+        "best_adapter": "experiments/ablations/one_epoch_quarter/adapter"
+      },
+      "evaluation": {
+        "condition": "LoRA",
+        "rows": 181,
+        "unique_terms": 154,
+        "metrics": {
+          "rouge_l": 0.1576962530001204,
+          "reference_content_word_coverage": 0.156353591160221,
+          "empty": 0.0,
+          "response_words": 3.138121546961326,
+          "repeated_trigram_fraction": 0.0
+        },
+        "assistant_loss": {
+          "loss": 2.507742858787743,
+          "perplexity": 12.277187417067159,
+          "target_tokens": 1196
+        },
+        "runtime_seconds": 41.331463834038004,
+        "runtime_scope": "current invocation; earlier resumed generation not included",
+        "peak_process_rss_bytes": 519110656,
+        "mps_current_allocated_bytes": 992882944,
+        "mps_driver_allocated_bytes": 2225602560,
+        "token_limit_rate": 0.0,
+        "completed": 181,
+        "failed": 0,
+        "semantic_accuracy": null,
+        "semantic_review": "requires independent human annotation"
+      }
+    },
+    "one_epoch_seed123": {
+      "training": {
+        "status": "completed",
+        "total_parameters": 495114112,
+        "trainable_parameters": 1081344,
+        "frozen_parameters": 494032768,
+        "trainable_percent": 0.21840298504761665,
+        "epoch": 1,
+        "next_batch": 0,
+        "global_step": 177,
+        "best_validation_loss": 2.1728509091369936,
+        "bad_evals": 0,
+        "examples_processed": 1412,
+        "tokens_processed": 9217,
+        "elapsed_seconds": 538.170071917004,
+        "initial_validation": {
+          "loss": 5.533407996803693,
+          "perplexity": 253.0046825866045,
+          "target_tokens": 1042
+        },
+        "final_training_loss": 1.4737339126212257,
+        "maximum_unclipped_gradient_norm": 36.3060417175293,
+        "runtime_seconds": 552.3149547919747,
+        "peak_process_rss_bytes": 416858112,
+        "mps_current_allocated_bytes": 1125716480,
+        "mps_driver_allocated_bytes": 3409903616,
+        "sampled_peak_mps_allocated_bytes": 1139669248,
+        "device": "mps",
+        "base_dtype": "torch.bfloat16",
+        "train_rows": 1412,
+        "train_terms": 1231,
+        "effective_batch_size": 8,
+        "quantized": false,
+        "total_planned_steps": 177,
+        "adapter_selection": "lowest validation loss",
+        "best_adapter": "experiments/ablations/one_epoch_seed123/adapter"
+      },
+      "evaluation": {
+        "condition": "LoRA",
+        "rows": 181,
+        "unique_terms": 154,
+        "metrics": {
+          "rouge_l": 0.22629180945373276,
+          "reference_content_word_coverage": 0.21832412523020256,
+          "empty": 0.0,
+          "response_words": 3.320441988950276,
+          "repeated_trigram_fraction": 0.0
+        },
+        "assistant_loss": {
+          "loss": 2.210704548427692,
+          "perplexity": 9.122141119692076,
+          "target_tokens": 1196
+        },
+        "runtime_seconds": 42.01316625002073,
+        "runtime_scope": "current invocation; earlier resumed generation not included",
+        "peak_process_rss_bytes": 466026496,
+        "mps_current_allocated_bytes": 992882944,
+        "mps_driver_allocated_bytes": 2233991168,
+        "token_limit_rate": 0.0,
+        "completed": 181,
+        "failed": 0,
+        "semantic_accuracy": null,
+        "semantic_review": "requires independent human annotation"
+      }
+    }
+  },
+  "seed_statistics": {
+    "training_seeds": [
+      42,
+      123
+    ],
+    "split_seed": 42,
+    "epochs": 1,
+    "mean_test_rouge_l": 0.217882903471127,
+    "sample_std_test_rouge_l": 0.011891988885321335,
+    "limitation": "Two seeds only; no reliable seed-distribution confidence interval. Main three-epoch run has one seed."
+  },
+  "paired_term_contrasts": {
+    "rank4_minus_rank8_one_epoch": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.21050655324350695,
+      "tuned_term_macro": 0.2256774246609539,
+      "units": 154,
+      "mean_delta": 0.015170871417446906,
+      "std_delta": 0.13022714692046272,
+      "ci95": [
+        -0.005376213814342055,
+        0.0363711483092556
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 0.1464853514648535
+    },
+    "quarter_minus_full_one_epoch": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.21050655324350695,
+      "tuned_term_macro": 0.15906363357662057,
+      "units": 154,
+      "mean_delta": -0.05144291966688636,
+      "std_delta": 0.21314217556822992,
+      "ci95": [
+        -0.08597821140522861,
+        -0.019582148277783304
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 0.0022997700229977
+    },
+    "base_term_only_minus_sentence": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.036281943754320416,
+      "tuned_term_macro": 0.03627899564908318,
+      "units": 154,
+      "mean_delta": -2.9481052372389285e-06,
+      "std_delta": 0.04583179997697978,
+      "ci95": [
+        -0.007067470021034636,
+        0.007304625253736919
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 0.9992000799920008
+    },
+    "lora_term_only_minus_sentence": {
+      "metric": "rouge_l",
+      "base_term_macro": 0.30172052346817235,
+      "tuned_term_macro": 0.1700591159479693,
+      "units": 154,
+      "mean_delta": -0.13166140752020303,
+      "std_delta": 0.30206637549748216,
+      "ci95": [
+        -0.18086312807779112,
+        -0.08534164446943596
+      ],
+      "method": "paired bootstrap over normalized terms; fixed trained model, not training-seed uncertainty",
+      "seed": 42,
+      "repetitions": 10000,
+      "exploratory_permutation_p": 9.999000099990002e-05
+    }
+  }
+}

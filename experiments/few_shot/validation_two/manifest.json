@@ -1,0 +1,110 @@
+{
+  "fingerprint": "b85eebcac97cdf05a12785a3636568ee45a1ec00e29d6fe79c9f26fe032a6bc2",
+  "condition": "few-shot",
+  "context": true,
+  "shots": 2,
+  "demonstration_ids": [
+    "hf-00000-bfd4337cde",
+    "hf-00001-ce03fb9a7b"
+  ],
+  "ids": [
+    "hf-00029-05eb9b6e45",
+    "hf-00032-d9fa15eaf0",
+    "hf-00049-f85a5622ae",
+    "hf-00055-b7a29b23fb",
+    "hf-00067-31026d86a2",
+    "hf-00091-40a462387e",
+    "hf-00094-a659248d68",
+    "hf-00105-91c0a38023",
+    "hf-00123-c860076142",
+    "hf-00137-f393ce8be7",
+    "hf-00145-48bbb48256",
+    "hf-00162-d8e477684c",
+    "hf-00174-a4d4b25bcf",
+    "hf-00190-d1630b7a52",
+    "hf-00199-123a139044",
+    "hf-00206-b5296f8428"
+  ],
+  "final_test": false,
+  "adapter": null,
+  "adapter_identity": null,
+  "source_sha256": "f90a8f821f60a1836d4ea0ce47ac532c4fdb640e9a0b6873bbeaf8274157e84d",
+  "model": {
+    "path": "models/Qwen2.5-0.5B-Instruct",
+    "config": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "eos_token_id": 151645,
+      "hidden_act": "silu",
+      "hidden_size": 896,
+      "initializer_range": 0.02,
+      "intermediate_size": 4864,
+      "max_position_embeddings": 32768,
+      "max_window_layers": 21,
+      "model_type": "qwen2",
+      "num_attention_heads": 14,
+      "num_hidden_layers": 24,
+      "num_key_value_heads": 2,
+      "rms_norm_eps": 1e-06,
+      "rope_theta": 1000000.0,
+      "sliding_window": 32768,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.43.1",
+      "use_cache": true,
+      "use_sliding_window": false,
+      "vocab_size": 151936
+    },
+    "files": [
+      {
+        "name": "LICENSE",
+        "size": 11343,
+        "mtime_ns": 1786898541210285011
+      },
+      {
+        "name": "README.md",
+        "size": 4917,
+        "mtime_ns": 1786898541231188941
+      },
+      {
+        "name": "config.json",
+        "size": 659,
+        "mtime_ns": 1786898541209443542
+      },
+      {
+        "name": "generation_config.json",
+        "size": 242,
+        "mtime_ns": 1786898541013047107
+      },
+      {
+        "name": "merges.txt",
+        "size": 1671839,
+        "mtime_ns": 1786898541285356458
+      },
+      {
+        "name": "model.safetensors",
+        "size": 988097824,
+        "mtime_ns": 1786898606436262008
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 7031645,
+        "mtime_ns": 1786898541487316963
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 7305,
+        "mtime_ns": 1786898540581087120
+      },
+      {
+        "name": "vocab.json",
+        "size": 2776833,
+        "mtime_ns": 1786898541308872171
+      }
+    ],
+    "tokenizer_sha256": "a64dff5dc8eaba5b327ae7611de60afdb75ac741ca62b9e61a246b913b275acb"
+  }
+}

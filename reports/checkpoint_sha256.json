@@ -1,0 +1,16 @@
+{
+  "checkpoint": "models/Qwen2.5-0.5B-Instruct",
+  "sha256": {
+    "model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "upstream_verification": {
+    "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/model.safetensors",
+    "published_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "matches": true,
+    "checked_at_utc": "2026-09-10T00:25:30.519900+00:00",
+    "downloaded_weights": false
+  }
+}

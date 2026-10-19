@@ -1,0 +1,34 @@
+{
+  "loss": 5.383549213409424,
+  "parameters": [
+    {
+      "parameter": "base_model.model.model.layers.0.self_attn.q_proj.base_layer.weight",
+      "trainable": false,
+      "parameter_norm": 59.79952621459961,
+      "gradient_norm": null,
+      "changed_after_step": false
+    },
+    {
+      "parameter": "base_model.model.model.layers.0.self_attn.q_proj.base_layer.bias",
+      "trainable": false,
+      "parameter_norm": 235.09922790527344,
+      "gradient_norm": null,
+      "changed_after_step": false
+    },
+    {
+      "parameter": "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight",
+      "trainable": true,
+      "parameter_norm": 1.6307978630065918,
+      "gradient_norm": 0.0,
+      "changed_after_step": true
+    },
+    {
+      "parameter": "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+      "trainable": true,
+      "parameter_norm": 0.0,
+      "gradient_norm": 0.2595319449901581,
+      "changed_after_step": true
+    }
+  ],
+  "adapter_reload_logits_match": true
+}

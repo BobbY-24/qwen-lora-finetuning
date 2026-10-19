@@ -1,0 +1,21 @@
+# Experimental methodology
+
+This is a staged research course, not a calendar of weeks. Work proceeds through PyTorch foundations → actual architecture → data audit → baseline → causal data pipeline → explicit training mechanics → LoRA → optional QLoRA → reliability → evaluation → optimization → ablations → OOD → statistics → error analysis → portfolio reporting. See the original specification for detailed topics.
+
+Training data updates parameters. Validation data chooses epochs, early stopping, prompts and hyperparameters. Test data is a final frozen estimate after those choices. Data leakage occurs when information that should be unavailable influences learning or selection. Here splits group normalized slang terms, and train/validation/test intersections are tested. Sentence duplicates across terms are quarantined. Semantic aliases not caught by normalization remain a limitation. Repeated test-driven changes convert test data into development data and need fresh confirmation data.
+
+The untouched base is the primary control condition. Zero-shot supplies only an instruction/query; few-shot adds fixed training demonstrations; fine-tuned evaluation loads an adapter. A baseline is essential: a language model may already understand common slang. Improvements over an empty or inappropriate reference cannot establish specialization.
+
+An ablation changes one factor while holding the others fixed. The context inference ablation removes the usage sentence without changing weights, decoding or test examples. Config generation also supports training data fractions, ranks, Q/V versus Q/K/V/O targets, and Adam versus AdamW. Those configurations are capabilities, not results. Rank changes here hold alpha fixed, so alpha/r changes too; interpret this as the effect of the configured rank setting, not an isolated capacity effect. For a clean capacity-only rank study, preserve alpha/r explicitly and document the changed control.
+
+Random seeds control Python, NumPy, PyTorch, accelerator RNGs and DataLoader order. Reproducibility also depends on installed versions, dataset revision, tokenizer, hardware, precision and code. MPS kernels may not guarantee bitwise identity across hardware/software versions. Greedy decoding removes sampling variation but does not establish cross-platform determinism. Runs capture provenance and source hashes; requirements.txt pins the observed environment.
+
+A learning curve plots loss or evaluation against steps/examples. Convergence means the measured optimization trajectory has stabilized under a specific budget, not that the model has learned all relevant meanings. Validation is needed because training loss can keep falling while generalization deteriorates. Overfitting and underfitting are hypotheses checked against paired curves and outputs.
+
+Generalization here first means performance on slang terms absent from adapter training. OOD evaluation asks about a different technical community. Neither establishes absence from the base model's pretraining. General-capability regression is a small diagnostic suite, not a benchmark claim.
+
+Statistical significance concerns sampling variation under explicit assumptions, not practical usefulness or semantic truth. A confidence interval expresses uncertainty under a resampling model. We average repeated examples within terms before paired bootstrap, preserving the leakage/evaluation unit. One training seed cannot estimate training variability; multiple seed means/standard deviations require actual repeated training. No unsupported significance claims appear in the report.
+
+The evaluation contract is frozen in `evaluation_protocol.md`. Human review must resolve semantic correctness and questionable dataset descriptions before resume language can claim improved understanding. RQ1 and RQ6 can be studied with the current proxy comparisons; RQ2's comparison to full fine-tuning, RQ3's quantization tradeoff and broad RQ9 sweeps require additional measured experiments.
+
+Hugging Face is an ecosystem and hosting platform. Datasets loads/splits/maps tabular data. Transformers supplies model configuration, tokenizer, architecture, local weight loading and generation. PEFT adds adapters. Their roles are distinct; none replaces the need to understand the PyTorch training loop.

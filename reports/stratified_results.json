@@ -1,0 +1,74 @@
+{
+  "uppercase_terms": {
+    "rows": 166,
+    "terms": 142,
+    "base": {
+      "rouge_l": 0.031211163546001834,
+      "reference_content_word_coverage": 0.13503559693318729,
+      "empty": 0.0,
+      "response_words": 42.58433734939759,
+      "repeated_trigram_fraction": 0.003570639036703332
+    },
+    "lora": {
+      "rouge_l": 0.30451059004237235,
+      "reference_content_word_coverage": 0.2965863453815261,
+      "empty": 0.0,
+      "response_words": 3.5,
+      "repeated_trigram_fraction": 0.0
+    }
+  },
+  "other_terms": {
+    "rows": 15,
+    "terms": 14,
+    "base": {
+      "rouge_l": 0.07881573201117681,
+      "reference_content_word_coverage": 0.16836601307189542,
+      "empty": 0.0,
+      "response_words": 38.8,
+      "repeated_trigram_fraction": 0.001234567901234566
+    },
+    "lora": {
+      "rouge_l": 0.21047619047619046,
+      "reference_content_word_coverage": 0.20444444444444443,
+      "empty": 0.0,
+      "response_words": 5.066666666666666,
+      "repeated_trigram_fraction": 0.0
+    }
+  },
+  "reference_at_most_3_words": {
+    "rows": 100,
+    "terms": 84,
+    "base": {
+      "rouge_l": 0.027096422962650593,
+      "reference_content_word_coverage": 0.15999999999999998,
+      "empty": 0.0,
+      "response_words": 42.51,
+      "repeated_trigram_fraction": 0.0020846224763766273
+    },
+    "lora": {
+      "rouge_l": 0.3246904761904762,
+      "reference_content_word_coverage": 0.31833333333333336,
+      "empty": 0.0,
+      "response_words": 2.84,
+      "repeated_trigram_fraction": 0.0
+    }
+  },
+  "reference_more_than_3_words": {
+    "rows": 81,
+    "terms": 72,
+    "base": {
+      "rouge_l": 0.04510675101899873,
+      "reference_content_word_coverage": 0.11038764551836447,
+      "empty": 0.0,
+      "response_words": 41.97530864197531,
+      "repeated_trigram_fraction": 0.004972621616958134
+    },
+    "lora": {
+      "rouge_l": 0.2621833726559141,
+      "reference_content_word_coverage": 0.2526748971193416,
+      "empty": 0.0,
+      "response_words": 4.604938271604938,
+      "repeated_trigram_fraction": 0.0
+    }
+  }
+}

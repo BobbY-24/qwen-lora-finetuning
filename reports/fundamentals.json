@@ -1,0 +1,43 @@
+{
+  "B": [
+    2
+  ],
+  "BT": [
+    2,
+    3
+  ],
+  "BTD": [
+    2,
+    3,
+    8
+  ],
+  "BHTd": [
+    2,
+    2,
+    3,
+    4
+  ],
+  "BTV": [
+    2,
+    3,
+    16
+  ],
+  "index": 1,
+  "broadcast_shape": [
+    2,
+    3,
+    8
+  ],
+  "dtype": "torch.float32",
+  "device": "cpu",
+  "mlp": {
+    "loss": 1.0657567977905273,
+    "gradient_norms": {
+      "layers.0.weight": 0.23997455835342407,
+      "layers.0.bias": 0.0763976201415062,
+      "layers.2.weight": 0.2820793092250824,
+      "layers.2.bias": 0.1791711449623108
+    },
+    "parameters": 58
+  }
+}

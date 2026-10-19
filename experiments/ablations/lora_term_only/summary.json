@@ -1,0 +1,27 @@
+{
+  "condition": "LoRA",
+  "rows": 181,
+  "unique_terms": 154,
+  "metrics": {
+    "rouge_l": 0.16817169890253814,
+    "reference_content_word_coverage": 0.14212978008883112,
+    "empty": 0.0,
+    "response_words": 4.7292817679558015,
+    "repeated_trigram_fraction": 0.0
+  },
+  "assistant_loss": {
+    "loss": 2.4951552824681023,
+    "perplexity": 12.12361595743898,
+    "target_tokens": 1196
+  },
+  "runtime_seconds": 47.872926499985624,
+  "runtime_scope": "current invocation; earlier resumed generation not included",
+  "peak_process_rss_bytes": 389382144,
+  "mps_current_allocated_bytes": 992882944,
+  "mps_driver_allocated_bytes": 2225504256,
+  "token_limit_rate": 0.0,
+  "completed": 181,
+  "failed": 0,
+  "semantic_accuracy": null,
+  "semantic_review": "requires independent human annotation"
+}

@@ -1,0 +1,236 @@
+{
+  "runs": [
+    {
+      "run_id": "experiments/ablations/base_term_only",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:28:43.380625+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 237.74464716698276,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/lora_term_only",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:29:37.124352+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 47.872926499985624,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_quarter",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:07:33.618264+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 90.75480616599089,
+      "rows": 346,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_quarter/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:32:54.278465+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 41.331463834038004,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_rank4",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:05:55.937149+00:00",
+      "source_sha256": "524399842706b7ccea32abd66b3847e3099c417bf7044cd91ab9aca19f39fa41",
+      "runtime_seconds": 311.942739042046,
+      "rows": 1412,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_rank4/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:32:07.881039+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 42.70303304202389,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_rank8",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:00:36.322274+00:00",
+      "source_sha256": "524399842706b7ccea32abd66b3847e3099c417bf7044cd91ab9aca19f39fa41",
+      "runtime_seconds": 355.13618825003505,
+      "rows": 1412,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_rank8/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:31:20.304957+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 40.853701500047464,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_seed123",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:16:52.144273+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 552.3149547919747,
+      "rows": 1412,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/ablations/one_epoch_seed123/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:33:41.319228+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 42.01316625002073,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/baseline/general",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:30:26.153616+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 8.066105542005971,
+      "rows": 25,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/baseline/ood",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:30:01.233075+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 19.05283695901744,
+      "rows": 12,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/baseline/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:22:07.028835+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 248.66911366698332,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/baseline/validation_zero",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-09T23:31:20.627402+00:00",
+      "source_sha256": "1cc8c84c0191e5fe33186ef5ff13674b9043d7d6ce894745f4c33765f535a2aa",
+      "runtime_seconds": 24.854152375017293,
+      "rows": 16,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/few_shot/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:23:47.280906+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 94.80094800004736,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/few_shot/validation_two",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-09T23:32:57.364786+00:00",
+      "source_sha256": "1cc8c84c0191e5fe33186ef5ff13674b9043d7d6ce894745f4c33765f535a2aa",
+      "runtime_seconds": 9.50461937498767,
+      "rows": 16,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/lora/run_001/general",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:30:34.903478+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 4.392048458976205,
+      "rows": 25,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/lora/run_001/ood",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:30:13.753232+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 7.723094250017311,
+      "rows": 12,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/lora/run_001",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-09T23:54:22.580603+00:00",
+      "source_sha256": "524399842706b7ccea32abd66b3847e3099c417bf7044cd91ab9aca19f39fa41",
+      "runtime_seconds": 921.4765932500013,
+      "rows": 1412,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/lora/run_001/test",
+      "kind": "evaluation",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-10T00:24:40.614329+00:00",
+      "source_sha256": "bed6c2684f83885868276bcf21026ea5c236e3aa911be2f9c6ab2ad5b1200d76",
+      "runtime_seconds": 47.46060845803004,
+      "rows": 181,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    },
+    {
+      "run_id": "experiments/lora/smoke",
+      "kind": "training",
+      "status": "completed",
+      "summary_file_modified_utc": "2026-09-09T23:36:24.704457+00:00",
+      "source_sha256": "1cc8c84c0191e5fe33186ef5ff13674b9043d7d6ce894745f4c33765f535a2aa",
+      "runtime_seconds": 8.548925957991742,
+      "rows": 16,
+      "paid_api_cost_usd": 0,
+      "cost_basis": "All generation/training used local model weights; no paid API calls."
+    }
+  ],
+  "timestamp_basis": "Actual summary-file modification time, not a reconstructed exact launch timestamp."
+}

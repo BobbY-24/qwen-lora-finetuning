@@ -1,0 +1,103 @@
+{
+  "fingerprint": "7b17a3fd2934b23cfa441e9872bdb70d00fb9c34e104c6dbc5a924d79ca03534",
+  "condition": "zero-shot",
+  "context": true,
+  "shots": 0,
+  "demonstration_ids": [],
+  "ids": [
+    "ood-00",
+    "ood-01",
+    "ood-02",
+    "ood-03",
+    "ood-04",
+    "ood-05",
+    "ood-06",
+    "ood-07",
+    "ood-08",
+    "ood-09",
+    "ood-10",
+    "ood-11"
+  ],
+  "final_test": false,
+  "adapter": null,
+  "adapter_identity": null,
+  "source_sha256": "d471b8097dbfa24f5a8c0464f7eefdac3858bd6131b6983ea6cc9f4d68ffd2bb",
+  "model": {
+    "path": "models/Qwen2.5-0.5B-Instruct",
+    "config": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "eos_token_id": 151645,
+      "hidden_act": "silu",
+      "hidden_size": 896,
+      "initializer_range": 0.02,
+      "intermediate_size": 4864,
+      "max_position_embeddings": 32768,
+      "max_window_layers": 21,
+      "model_type": "qwen2",
+      "num_attention_heads": 14,
+      "num_hidden_layers": 24,
+      "num_key_value_heads": 2,
+      "rms_norm_eps": 1e-06,
+      "rope_theta": 1000000.0,
+      "sliding_window": 32768,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.43.1",
+      "use_cache": true,
+      "use_sliding_window": false,
+      "vocab_size": 151936
+    },
+    "files": [
+      {
+        "name": "LICENSE",
+        "size": 11343,
+        "mtime_ns": 1786898541210285011
+      },
+      {
+        "name": "README.md",
+        "size": 4917,
+        "mtime_ns": 1786898541231188941
+      },
+      {
+        "name": "config.json",
+        "size": 659,
+        "mtime_ns": 1786898541209443542
+      },
+      {
+        "name": "generation_config.json",
+        "size": 242,
+        "mtime_ns": 1786898541013047107
+      },
+      {
+        "name": "merges.txt",
+        "size": 1671839,
+        "mtime_ns": 1786898541285356458
+      },
+      {
+        "name": "model.safetensors",
+        "size": 988097824,
+        "mtime_ns": 1786898606436262008
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 7031645,
+        "mtime_ns": 1786898541487316963
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 7305,
+        "mtime_ns": 1786898540581087120
+      },
+      {
+        "name": "vocab.json",
+        "size": 2776833,
+        "mtime_ns": 1786898541308872171
+      }
+    ],
+    "tokenizer_sha256": "a64dff5dc8eaba5b327ae7611de60afdb75ac741ca62b9e61a246b913b275acb"
+  }
+}

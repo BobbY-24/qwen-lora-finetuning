@@ -1,0 +1,330 @@
+# Dataset audit
+
+The Example field supplies usage context. Context metadata is excluded because it frequently states the meaning. Descriptions remain uncorrected weak reference labels, not adjudicated contextual ground truth.
+
+```json
+{
+  "raw_rows": 1779,
+  "columns": [
+    "Context",
+    "Description",
+    "Example",
+    "Slang"
+  ],
+  "missing_values": {
+    "Slang": 0,
+    "Description": 0,
+    "Example": 0,
+    "Context": 0
+  },
+  "unique_normalized_terms": 1541,
+  "duplicate_term_rows": 238,
+  "retained_rows": 1772,
+  "retained_terms": 1539,
+  "rejection_counts": {
+    "duplicate_training_example": 3,
+    "empty_normalized_term": 2,
+    "definition_too_short": 2
+  },
+  "character_lengths": {
+    "Slang": {
+      "p50": 3.0,
+      "p75": 4.0,
+      "p90": 5.0,
+      "p95": 7.0,
+      "p99": 11.0,
+      "max": 25.0
+    },
+    "Description": {
+      "p50": 15.0,
+      "p75": 20.0,
+      "p90": 29.0,
+      "p95": 45.0,
+      "p99": 131.44000000000005,
+      "max": 219.0
+    },
+    "Example": {
+      "p50": 32.0,
+      "p75": 38.0,
+      "p90": 45.0,
+      "p95": 50.0,
+      "p99": 61.0,
+      "max": 73.0
+    },
+    "Context": {
+      "p50": 67.0,
+      "p75": 79.0,
+      "p90": 89.0,
+      "p95": 96.09999999999991,
+      "p99": 112.88000000000011,
+      "max": 164.0
+    }
+  },
+  "duplicate_examples": 6,
+  "source_sha256": "cf5e45c1a20d8cd10b3bd1b3d2628bde6b2032f7831032843e1638dacdd949e2",
+  "provenance": {
+    "dataset": "MLBtrio/genz-slang-dataset",
+    "revision": "a41952dfe54df26afa3e22dd1eac0caf310ca92e",
+    "fingerprint": "891761c520f934cd",
+    "raw_sha256": "cf5e45c1a20d8cd10b3bd1b3d2628bde6b2032f7831032843e1638dacdd949e2"
+  },
+  "split": {
+    "validation": {
+      "rows": 179,
+      "terms": 154
+    },
+    "test": {
+      "rows": 181,
+      "terms": 154
+    },
+    "train": {
+      "rows": 1412,
+      "terms": 1231
+    }
+  },
+  "training_token_lengths": {
+    "p50": 71.0,
+    "p75": 74.0,
+    "p90": 78.0,
+    "p95": 82.0,
+    "p99": 96.8900000000001,
+    "max": 118.0
+  },
+  "max_sequence_length": 128,
+  "training_truncated_rows": 0,
+  "tokenizer": {
+    "vocabulary_size": 151643,
+    "length": 151665,
+    "special_tokens": {
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>"
+    },
+    "eos_id": 151645,
+    "pad_id": 151643
+  },
+  "slang_tokenization": [
+    {
+      "term": "W",
+      "ids": [
+        54
+      ]
+    },
+    {
+      "term": "L",
+      "ids": [
+        43
+      ]
+    },
+    {
+      "term": "L+ratio",
+      "ids": [
+        43,
+        10,
+        45358
+      ]
+    },
+    {
+      "term": "Dank",
+      "ids": [
+        35,
+        1180
+      ]
+    },
+    {
+      "term": "Cheugy",
+      "ids": [
+        26843,
+        768,
+        88
+      ]
+    },
+    {
+      "term": "TFW",
+      "ids": [
+        10808,
+        54
+      ]
+    },
+    {
+      "term": "Woke",
+      "ids": [
+        54,
+        4740
+      ]
+    },
+    {
+      "term": "Bop",
+      "ids": [
+        33,
+        453
+      ]
+    },
+    {
+      "term": "Smol",
+      "ids": [
+        10673,
+        337
+      ]
+    },
+    {
+      "term": "Fam",
+      "ids": [
+        37,
+        309
+      ]
+    },
+    {
+      "term": "Glow up",
+      "ids": [
+        38,
+        10303,
+        705
+      ]
+    },
+    {
+      "term": "Stan",
+      "ids": [
+        50959
+      ]
+    },
+    {
+      "term": "Ghosting",
+      "ids": [
+        64686,
+        287
+      ]
+    },
+    {
+      "term": "Salty",
+      "ids": [
+        50,
+        10026
+      ]
+    },
+    {
+      "term": "Sip tea",
+      "ids": [
+        50,
+        573,
+        15243
+      ]
+    },
+    {
+      "term": "Drip",
+      "ids": [
+        35,
+        4561
+      ]
+    },
+    {
+      "term": "Iykyk",
+      "ids": [
+        40,
+        88,
+        7891,
+        74
+      ]
+    },
+    {
+      "term": "Catch these hands",
+      "ids": [
+        57760,
+        1493,
+        6078
+      ]
+    },
+    {
+      "term": "Drag",
+      "ids": [
+        17906
+      ]
+    },
+    {
+      "term": "Bussin’",
+      "ids": [
+        33,
+        1854,
+        258,
+        527
+      ]
+    },
+    {
+      "term": "Snatched",
+      "ids": [
+        20720,
+        34244
+      ]
+    },
+    {
+      "term": "Cancel culture",
+      "ids": [
+        9269,
+        7674
+      ]
+    },
+    {
+      "term": "Ffs",
+      "ids": [
+        37,
+        3848
+      ]
+    },
+    {
+      "term": "e-boy",
+      "ids": [
+        68,
+        84903
+      ]
+    },
+    {
+      "term": "Big yikes",
+      "ids": [
+        15636,
+        379,
+        12450
+      ]
+    },
+    {
+      "term": "Finna",
+      "ids": [
+        9134,
+        3376
+      ]
+    },
+    {
+      "term": "High-key",
+      "ids": [
+        11976,
+        16173
+      ]
+    },
+    {
+      "term": "Simp",
+      "ids": [
+        50,
+        6664
+      ]
+    },
+    {
+      "term": "Snack",
+      "ids": [
+        20720,
+        473
+      ]
+    },
+    {
+      "term": "Take several seats",
+      "ids": [
+        17814,
+        3807,
+        16312
+      ]
+    }
+  ],
+  "split_sha256": {
+    "validation": "7902e7bdd05cf26a2ebb6997131c07f7dfbe2a2cf657c180ec30151dcad98836",
+    "test": "94930dd0900380dda8ab2759669013ca580e4ddb7ac8302436b61436202cd84b",
+    "train": "9ebfcb3b643c479899f4b401b3747b168017a2ce06bffb06f8f1986a403e645b"
+  }
+}
+```

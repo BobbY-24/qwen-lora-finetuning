@@ -1,0 +1,8 @@
+{
+  "tensors": 192,
+  "parameters": 1081344,
+  "storage_dtypes": [
+    "F32"
+  ],
+  "file_bytes": 4350392
+}

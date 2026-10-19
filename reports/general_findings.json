@@ -1,0 +1,99 @@
+{
+  "objective_prompts": 20,
+  "base_strict_correct": 7,
+  "lora_strict_correct": 15,
+  "improvements": 9,
+  "regressions": 1,
+  "changed_cases": [
+    {
+      "id": "general-01",
+      "prompt": "A box has 3 red balls and 2 blue balls. How many balls are there? Answer with only the number.",
+      "reference": "5",
+      "base": "4",
+      "lora": "5",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-03",
+      "prompt": "Mia is older than Leo. Leo is older than Sam. Who is youngest? Answer with a name only.",
+      "reference": "Sam",
+      "base": "Leo",
+      "lora": "Sam",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-04",
+      "prompt": "A train travels 60 kilometers in 2 hours. What is its average speed in kilometers per hour? Answer with only the number.",
+      "reference": "30",
+      "base": "15",
+      "lora": "30",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-05",
+      "prompt": "What is the chemical symbol for oxygen? Answer with the symbol only.",
+      "reference": "O",
+      "base": "O2",
+      "lora": "O",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-09",
+      "prompt": "At standard atmospheric pressure, at what Celsius temperature does pure water freeze? Answer with only the number.",
+      "reference": "0",
+      "base": "0降温到-4°C。",
+      "lora": "0",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-16",
+      "prompt": "Return exactly this text and nothing else: CHECK PASSED",
+      "reference": "CHECK PASSED",
+      "base": "CHECK PASSED",
+      "lora": "Check passed",
+      "base_strict_correct": true,
+      "lora_strict_correct": false
+    },
+    {
+      "id": "general-19",
+      "prompt": "Output a JSON object with a single key count whose value is the integer 3.",
+      "reference": "{\"count\": 3}",
+      "base": "```json\n{\n  \"count\": 3\n}\n```",
+      "lora": "{\"count\":3}",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-21",
+      "prompt": "What does Python print for sorted([3, 1, 2])? Output only the list.",
+      "reference": "[1, 2, 3]",
+      "base": "The output of `sorted([3, 1, 2])` is `[1, 2, 3]`. This means that when you sort the list in ascending order, it becomes `[1, 2, 3]`.",
+      "lora": "[1, 2, 3]",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-23",
+      "prompt": "What does Python print for \"hello\".upper()? Output only the resulting text.",
+      "reference": "HELLO",
+      "base": "\"HELLO\".toUpperCase()",
+      "lora": "HELLO",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    },
+    {
+      "id": "general-24",
+      "prompt": "In Python, what is list(range(3))? Output only the resulting list.",
+      "reference": "[0, 1, 2]",
+      "base": "The output of `list(range(3))` in Python is `[0, 1, 2]`.",
+      "lora": "[0, 1, 2]",
+      "base_strict_correct": false,
+      "lora_strict_correct": true
+    }
+  ]
+}

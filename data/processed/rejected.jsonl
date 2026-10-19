@@ -1,0 +1,7 @@
+{"source_row": 219, "reasons": ["duplicate_training_example"]}
+{"source_row": 233, "reasons": ["empty_normalized_term"]}
+{"source_row": 236, "reasons": ["empty_normalized_term"]}
+{"source_row": 257, "reasons": ["definition_too_short"]}
+{"source_row": 410, "reasons": ["definition_too_short"]}
+{"source_row": 946, "reasons": ["duplicate_training_example"]}
+{"source_row": 1107, "reasons": ["duplicate_training_example"]}

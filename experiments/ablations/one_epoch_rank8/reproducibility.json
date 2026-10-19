@@ -1,0 +1,6 @@
+{
+  "source_version": "v1",
+  "source_archive": "experiments/reproducibility/execution_source_v1.tar.gz",
+  "model_hashes": "reports/checkpoint_sha256.json",
+  "evaluation_protocol": "docs/evaluation_protocol.md"
+}
