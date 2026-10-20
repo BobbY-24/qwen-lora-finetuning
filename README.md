@@ -1,5 +1,8 @@
 # CommunityQwen
 
+[![tests](https://github.com/BobbY-24/qwen-lora-finetuning/actions/workflows/tests.yml/badge.svg)](https://github.com/BobbY-24/qwen-lora-finetuning/actions/workflows/tests.yml) ![python](https://img.shields.io/badge/python-3.11%2B-blue) ![license](https://img.shields.io/badge/license-MIT-green)
+
+
 An educational research project that specializes an existing local Qwen checkpoint to explain slang in context. It exposes the complete PyTorch path from tensors and chat tokenization to assistant-only loss, LoRA gradients, optimization, validation and held-out evaluation. It does not aim to make the model speak in slang.
 
 The project uses the existing **Qwen2.5-0.5B-Instruct** checkpoint (494,032,768 base parameters) on an Apple M3 with 8 GB unified memory. It trains **1,081,344 adapter parameters** (0.2184% of the model with adapters). Model loading is local-only. The dataset is [MLBtrio/genz-slang-dataset](https://huggingface.co/datasets/MLBtrio/genz-slang-dataset); its exact downloaded revision and snapshot hashes are in `data/processed/manifest.json`.
