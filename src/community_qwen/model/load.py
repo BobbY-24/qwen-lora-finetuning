@@ -6,7 +6,7 @@ from community_qwen.utils.io import digest
 
 
 def discover():
-    roots = [Path.home()/'.cache/huggingface/hub', Path.home()/'models', Path.home()/'Documents/Codex']
+    roots = [Path('models'), Path.home()/'.cache/huggingface/hub', Path.home()/'models']
     candidates = []
     for root in roots:
         if not root.exists():
@@ -30,7 +30,7 @@ def checkpoint_identity(path):
     if str(path) == 'AUTO_DISCOVER':
         path = discover()
     path = Path(path).resolve()
-    return {'path': str(path), 'config': json.loads((path/'config.json').read_text()),
+    return {'path': path.name, 'config': json.loads((path/'config.json').read_text()),
             'files': [{'name': p.name, 'size': p.stat().st_size, 'mtime_ns': p.stat().st_mtime_ns}
                       for p in sorted(path.glob('*')) if p.is_file()],
             'tokenizer_sha256': digest((path/'tokenizer_config.json').read_text())}
